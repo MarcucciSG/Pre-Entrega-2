@@ -6,7 +6,26 @@
 }
 .pagina{
     background-color: rgb(253, 197, 206) ;
+    display: grid;
+    grid-template-columns:(4,2fr);    
+    grid-template-areas:"header header header header"
+                        "nav   nav    nav    nav"
+                         "main   main   main   aside"
+                        " footer footer footer footer";
 }
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+    }
+
 /*index*/
 .tiendaOnline{ 
         color: rgb(253, 197, 206);
@@ -27,6 +46,7 @@
     border-color:rgb(150, 58, 89);
     font-size: x-large;
     text-align: center;
+    
     
 }
 .navegador ul li{
@@ -128,11 +148,18 @@
     font-size: xx-large;
     }
 footer{
-        color:  rgb(253, 197, 206);
+        color:  rgb(253, 197, 206);        
         background-color: rgb(214, 85, 128);
-        padding: 10px;  
+        padding: 10px;          
         font-size: x-large;  
-        
+        display: flex;      
+        flex-wrap: wrap ;  
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content:space-between; 
+        grid-area: footer;
+                
+                
 }
 .tituloFooter{
 margin-top: 0px;
@@ -158,6 +185,10 @@ margin-bottom: 10px;
 
 } 
 /*Contactos*/
+.formularioContactos{
+    display: flex;
+    flex-direction: column;
+}
 .recuadroContactos{
     margin: 5px;
     padding: 5px;
@@ -165,7 +196,8 @@ margin-bottom: 10px;
     margin-left: 300px;
      background-color: rgb(253, 197, 206);
      border-radius: 10px;
-     outline: none;
+     outline: none;     
+     
     }
     .recuadroContactosMensaje{
         margin: 5px;
@@ -211,7 +243,7 @@ margin-bottom: 10px;
     text-align:end; 
 
      }
-     /*empresas*/
+     /*empresas*/   
    .tituloVentas{
     margin-right: 550px;
     text-decoration: underline;
@@ -242,18 +274,18 @@ margin-bottom: 10px;
      /*productos*/
      .navProductos ul {        
         list-style-type: none;            
-        margin: 7px;
-        margin-right:1500px;        
-        text-align: center;
+        margin: 7px;               
+        text-align: start;
         font-size: x-large;
         
         
      }
-     .navProductos > ul > li{              
+     .navProductos > ul > li{                     
         background-color: rgb(155 89 182);
         display: inline-block;
         position: relative;
         margin-left: 40px;
+        
         
 
      }
