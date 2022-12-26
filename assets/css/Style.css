@@ -26,6 +26,9 @@ main{
 aside{
     grid-area: aside;
     }
+.paginaConBS{
+    background-color: rgb(253, 197, 206) ;
+}
 
 /*index*/
 
@@ -38,7 +41,7 @@ aside{
         background-image: url(../img/logoTiendaOnline.png);
         background-repeat: no-repeat;
         width: 100%;
-        height: 75px;                  
+        height: 100%;                  
         }
     @media(max-width:460px){
         .tiendaOnline{
