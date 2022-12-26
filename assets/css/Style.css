@@ -40,6 +40,11 @@ aside{
         width: 100%;
         height: 75px;                  
         }
+    @media(max-width:460px){
+        .tiendaOnline{
+            font-size: 40px;
+        }
+    }
 
 .navegador > ul{
     list-style-type: none;
@@ -117,12 +122,17 @@ aside{
     text-decoration: none;
     text-align: center;
 }
+.botonesIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .btnIndex{
     background-image: url(../img/btnCocina.jpg);
     width: 500px;
-    height: 300px;
-    margin: 40px;
-    margin-left: 150px;
+    height: 300px;        
     background-size: contain;
     border-color:rgb(155 89 182);
     border-radius: 10px;
@@ -130,8 +140,7 @@ aside{
 .btnIndex2{
     background-image: url(../img/btnOrden.jpg);
     width: 500px;
-    height: 300px;
-    margin: 20px;
+    height: 300px;    
     background-size: contain;
     border-color:rgb(155 89 182);
     border-radius: 10px;
@@ -139,8 +148,7 @@ aside{
 .btnIndex3{
     background-image: url(../img/btnUsoPersonal.jpg);
     width: 500px;
-    height: 300px;
-    margin: 20px;
+    height: 300px;    
     background-size: contain;
     border-color:rgb(155 89 182);
     border-radius: 10px;
@@ -148,7 +156,7 @@ aside{
 .tituloBtnIndex{
     color: rgb(229, 151, 240);
     font-size: xx-large;
-    }
+    }   
 footer{
         color:  rgb(253, 197, 206);        
         background-color: rgb(214, 85, 128);
@@ -176,7 +184,7 @@ margin-bottom: 10px;
     text-align: end;
 }
 .tituloFormulario{
-    margin-left: 200px;
+ text-align: center;
 }
 .subTituloPagina{   
      margin-left: 50px;
@@ -187,15 +195,23 @@ margin-bottom: 10px;
 
 } 
 /*Contactos*/
+@media(max-width:1024px){    
+                    
+    .subTituloPagina{
+        text-align: center;
+    }
+
+}
 .formularioContactos{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 .recuadroContactos{
     margin: 5px;
     padding: 5px;
-    width: 500px;
-    margin-left: 300px;
+    width: 500px;    
      background-color: rgb(253, 197, 206);
      border-radius: 10px;
      outline: none;     
@@ -206,7 +222,6 @@ margin-bottom: 10px;
         height: 200px;
         padding: 5px;
         width: 500px;        
-        margin-left: 300px;
         background-color: rgb(253, 197, 206);
         border-radius: 10px;
         outline: none;       
@@ -214,8 +229,7 @@ margin-bottom: 10px;
     .botonContactos{
     margin: 5px;   
     padding: 10px;
-    width: 500px;
-    margin-left: 300px;
+    width: 500px;   
     background-color: rgb(155 89 182);
     color: white;
     font-size: large;    
@@ -279,6 +293,7 @@ margin-bottom: 10px;
         margin: 7px;               
         text-align: start;
         font-size: x-large;
+             
         
         
      }
@@ -289,6 +304,8 @@ margin-bottom: 10px;
         margin-left: 40px;
         
         
+        
+        
 
      }
      .navProductos > ul > li > a {
@@ -296,9 +313,17 @@ margin-bottom: 10px;
         display: block;
         text-decoration: none;
         padding: 10px;
+        
+        
      }
      .navProductos > ul > li:hover ul{
-        display: block;
+        display: block;        
+        
+     }
+     @media(max-width:700px){
+      .subTituloPagina{
+        text-align: center;
+       }      
      }
      .navProductos > ul > li > ul{
         
@@ -308,9 +333,13 @@ margin-bottom: 10px;
         position: absolute;
         top: 40px;
         left: 0;
+        
+        
+        
      }
      .navProductos > ul > li > ul > li{
         display: inline;
+        
      }
     
      .navProductos > ul > li > ul > li > a{
@@ -318,5 +347,6 @@ margin-bottom: 10px;
         color: white;
         background-color:  rgb(155 89 182);
         display: block;
-        padding: 10px;
-     }
+        padding: 10px;       
+             }
+   
