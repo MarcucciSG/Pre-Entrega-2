@@ -7,11 +7,12 @@
     <title>Tienda Online "Nosotros"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/Style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body class="pagina">
     <header> 
-        <h1 class="tiendaOnline">Tienda online</h1> 
-    
+        <h1 class="tiendaOnline">Tienda online</h1>    
                
     </header>    
     <nav class="navegador">  
@@ -26,24 +27,38 @@
 </nav>
     
     <main>
-        <h2 class="subTituloPagina">Nosotros</h2>
-        <div class="imagenSliderNosotros"></div>
-        <br>
-        <br>
-        <div>
-            <img class="imgQuienesSomos"src="../assets/img/quienesSomosFoto1.jpg" alt="">
-            <p class="textQuienesSomos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam officia quia odit et odio itaque in temporibus consequatur voluptate commodi eveniet aliquid sequi eum</p>
-            <p class="textQuienesSomos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam officia quia odit et odio itaque in temporibus consequatur voluptate commodi eveniet aliquid sequi eum</p>  
-        </div>       
-        <div>
-            <img class="imgQuienesSomos" src="../assets/img/imgNosotros2.jpg" alt="">
-            <p class="textQuienesSomos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam officia quia odit et odio itaque in temporibus consequatur voluptate commodi eveniet aliquid sequi eum</p>
-            <p class="textQuienesSomos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam officia quia odit et odio itaque in temporibus consequatur voluptate commodi eveniet aliquid sequi eum</p>
-        </div>
-        <div>
-            <iframe class="imgQuienesSomos"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.43915604562!2d-58.40918168589215!3d-34.61541522865895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334c73fe3e107%3A0xeae5d0a098ae5c1!2sUsina%20del%20Arte!5e0!3m2!1sen!2sar!4v1669755257457!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="textQuienesSomos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam officia quia odit et odio itaque in temporibus consequatur voluptate commodi eveniet aliquid sequi eum.</p><p class="textQuienesSomos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga aperiam officia quia odit et odio itaque in temporibus consequatur voluptate commodi eveniet aliquid sequi eum, nihil culpa</p>
-        </div>
+        <h2 class="subTituloPagina">Nosotros</h2> 
+        <div class="d-flex row">
+                   
+        <div id="carouselExample" class="carousel slide  img-fluid col-5 col-md-5 col-lg-5 m-4 mb-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/img/img_nosotros2.jpg" class="d-block w-100 " alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/slider_Nosotros.jpg" class="d-block w-100 " alt="...">
+              </div>           
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>  
+          <p class="parrafoNosotros col-5 col-md-5 col-lg-5 m-2 mt-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, nostrum. Molestias dolorem nam minima tempore a at repellendus ratione quibusdam ex cupiditate, repellat doloribus eos. Omnis assumenda sint rem enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis omnis delectus repudiandae temporibus facere laborum modi sunt voluptatum quae exercitationem, sit recusandae ad, adipisci accusantium cumque ipsam minima aperiam!</p>
+      </div>
+        <div class="d-flex row">
+          <img class="img-fluid col-5 col-md-5 col-lg-5 m-4 mb-5" src="../assets/img/quienesSomosFoto1.jpg" alt="">
+        
+        <p class="parrafoNosotros col-5 col-md-5 col-lg-5 mt-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corporis est enim! Aperiam quibusdam vero quae! Atque temporibus, facere vero deserunt, aut dolor nisi quae doloribus, odio excepturi placeat ea?</p>
+      </div>
+      
+      
+        
+           
     </main>
     <aside>
 
@@ -66,5 +81,10 @@
          </div>
          
      </footer>
+     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
 </body>
 </html>

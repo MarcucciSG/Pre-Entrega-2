@@ -5,23 +5,24 @@
 
 }
 .pagina{
+    overflow-x:hidden;    
     background-color: rgb(253, 197, 206) ;
     display: grid;
-    grid-template-columns:(4,2fr);    
+    grid-template-columns:1fr 2fr 2fr 1fr;      
     grid-template-areas:"header header header header"
                         "nav   nav    nav    nav"
-                         "main   main   main   aside"
+                         "main   main   main   main"
                         " footer footer footer footer";
 }
 
 header{
-    grid-area: header;
+    grid-area:header;
 }
 nav{
-    grid-area: nav;
+    grid-area:nav;
 }
 main{
-    grid-area: main;
+    grid-area:main;
 }
 aside{
     grid-area: aside;
@@ -98,6 +99,8 @@ aside{
     border-radius: 8px;    
     padding: 10px;
     font-size: large;  
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000a6;
     
 }
 .tarjeta__imgproducto{
@@ -130,11 +133,26 @@ aside{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
+@media(max-width:850px){
+    .tituloProductos{
+        text-align: center;
+    }
+    .botonesIndex{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+        gap:15px;
+    }
+
+}
+
 
 .btnIndex{
     background-image: url(../img/btnCocina.jpg);
-    width: 500px;
+    width: 450px;
     height: 300px;        
     background-size: contain;
     border-color:rgb(155 89 182);
@@ -142,7 +160,7 @@ aside{
 }
 .btnIndex2{
     background-image: url(../img/btnOrden.jpg);
-    width: 500px;
+    width: 450px;
     height: 300px;    
     background-size: contain;
     border-color:rgb(155 89 182);
@@ -150,7 +168,7 @@ aside{
 }
 .btnIndex3{
     background-image: url(../img/btnUsoPersonal.jpg);
-    width: 500px;
+    width: 450px;
     height: 300px;    
     background-size: contain;
     border-color:rgb(155 89 182);
@@ -160,6 +178,7 @@ aside{
     color: rgb(229, 151, 240);
     font-size: xx-large;
     }   
+    
 footer{
         color:  rgb(253, 197, 206);        
         background-color: rgb(214, 85, 128);
@@ -203,74 +222,28 @@ margin-bottom: 10px;
     .subTituloPagina{
         text-align: center;
     }
-
 }
-.formularioContactos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.recuadroContactos{
-    margin: 5px;
-    padding: 5px;
-    width: 500px;    
-     background-color: rgb(253, 197, 206);
-     border-radius: 10px;
-     outline: none;     
-     
+    .btn_BS{
+    background-color:  rgb(253, 197, 206);        
+    color: rgb(214, 85, 128);
+      
     }
-    .recuadroContactosMensaje{
-        margin: 5px;
-        height: 200px;
-        padding: 5px;
-        width: 500px;        
-        background-color: rgb(253, 197, 206);
-        border-radius: 10px;
-        outline: none;       
-    }
-    .botonContactos{
-    margin: 5px;   
-    padding: 10px;
-    width: 500px;   
-    background-color: rgb(155 89 182);
-    color: white;
-    font-size: large;    
-    }
-    .contactosInfoTienda{             
-        font-size: x-large;
-        margin: 15px;       
-           }
-    /*nosotros*/
-    .imagenSliderNosotros{       
-        height: 400px;
-        width: 100%;
-        border-color: rgb(253, 197, 206);
-        background-image: url(../img/slider\ Nosotros.jpg);
-        background-size: contain;
-    }
-  .imgQuienesSomos{
-    height: 400px;
-    margin-left: 50px;
-    border-color: rgb(253, 197, 206);
-    border-radius: 15px;         
- }
-  .textQuienesSomos{
-    margin-left: 50px;
-    margin-right: 30px;
-    font-size: x-large;  
-    text-align:end; 
-
-     }
-     /*empresas*/   
+           
+     /*empresas*/  
+   
    .tituloVentas{
     margin-right: 550px;
     text-decoration: underline;
     text-align: end;
     font-size: xx-large;
     
-
    }
+    .contenedorEmpresas{
+        display: flex;
+        flex-direction: wrap;
+     
+
+    }
   .imgEmpresas{
     height: 400px;
     margin-left: 50px;
@@ -279,16 +252,17 @@ margin-bottom: 10px;
   
 
      }
-     .btnEmpresas{
+     .btnEmpresas{          
         margin: 5px;
+        margin-left: 80px;
         padding: 10px;
-        width: 500px;
-        margin-left: 1000px;
+        width: 500px;       
         margin-bottom: 20px;
         border-radius: 10px;
         background-color: rgb(155 89 182);
         color: white;
         font-size: large;
+
      }
      /*productos*/   
      .navProductos ul {        
@@ -296,6 +270,7 @@ margin-bottom: 10px;
         margin: 7px;               
         text-align: start;
         font-size: x-large;
+        
              
         
         
@@ -309,6 +284,7 @@ margin-bottom: 10px;
         
         
         
+        
 
      }
      .navProductos > ul > li > a {
@@ -318,9 +294,12 @@ margin-bottom: 10px;
         padding: 10px;
         
         
+        
+        
      }
      .navProductos > ul > li:hover ul{
-        display: block;        
+        display: block;    
+        height:200px    
         
      }
      @media(max-width:700px){
@@ -339,9 +318,11 @@ margin-bottom: 10px;
         
         
         
+        
      }
      .navProductos > ul > li > ul > li{
         display: inline;
+       
         
      }
     
@@ -350,6 +331,10 @@ margin-bottom: 10px;
         color: white;
         background-color:  rgb(155 89 182);
         display: block;
-        padding: 10px;       
+        padding: 10px;
+             
              }
-   
+    /*Nosotros*/
+.parrafoNosotros{
+    font-size: 25px;
+}

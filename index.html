@@ -7,6 +7,7 @@
         <title>Tienda Online "Inicio"</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/Style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
     </head>
     <body class="pagina"> 
@@ -31,7 +32,7 @@
            
         <main>
             <h2 class="tituloProductos">Productos más vendidos</h2>
-            <div class="divPadre"> 
+            <div class="divPadre"data-aos="zoom-in-down"> 
                 <div class="tarjetaProducto">
                     <img class="tarjeta__imgproducto" src="./assets/img/cubeteraConTapaDeSilicona.jpeg" alt="Cubetera de silicona">
                     <h3 class="tarjeta__titulo">Cubetera con tapa de silicona</h3>                 
@@ -50,7 +51,7 @@
                   
             </div>
             <h2 class="tituloProductos">Productos en Oferta</h2>
-                <div class="divPadre">
+                <div class="divPadre"data-aos="zoom-in-down">
                 
                 <div class="tarjetaProducto">
                     <img class="tarjeta__imgproducto" src="./assets/img/dispenserConEsponja.png" alt="Dispenser con esponja">
@@ -100,6 +101,9 @@
             </div>
             
         </footer>
-         
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script> 
     </body>
 </html>
