@@ -48,39 +48,49 @@ aside{
         position: absolute;
         width: 69px;
         top: 10px;
-        left: 20px;                
+        right: 20px;                
     }
-.tiendaOnline > .fa-bars{
+.navegador > .fa-bars{
     display: none;
     font-size: 30px;
     
 }
- @media(max-width:600px) {
-    .tiendaOnline{
-        display: flex;       
-        flex-wrap: wrap ;  
-        flex-direction: row;        
-        justify-content:space-around;
-        align-items: baseline;
-        font-size: 20px;     
-                        
+ @media(max-width:600px) {     
+    #logo{      
+        width: 55px;             
     }
-    #logo{
-        position: static;
-        width: 55px;
-              
-
+    .navegador{
+        justify-content: space-between;        
     }
-    .tiendaOnline > .fa-bars{
+    .navegador > .fa-bars{       
         display: block;
-        text-align: start;  
-        margin-left: -30px; 
+        color:rgb(253, 197, 206) ;
+        font-size: 30px;
+        padding: 20px;       
+       margin-top: -70px;
+    }
+    .navegador > .fa-bars:hover + ul{
+        left: 0;
 
     }
-    .navegador > ul {
-        display: none;
+    .navegador > ul:hover{
+        left:0
     }
+    .navegador > ul{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;        
+        width: 250px;
+        height: 300px;  
+        left: -300px;   
+        transition: 0.2s; 
+       
+    } 
+
+
     
+
  }
 .navegador > ul{
     list-style-type: none;
