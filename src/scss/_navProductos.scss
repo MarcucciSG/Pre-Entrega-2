@@ -1,0 +1,36 @@
+.navProductos{
+    ul {        
+        list-style-type: none;            
+        margin: 7px;               
+        text-align: end;
+        font-size: x-large;
+        li{                     
+            background-color: rgb(155 89 182);
+            display: inline-block;
+            position: relative;
+            text-align: center;  
+            &:hover ul{
+                display: block;    
+                height:200px    
+                
+             }       
+                                  
+            a {
+                color: white;
+                display: block;
+                text-decoration: none;
+                padding: 10px;             
+                                           
+             }                      
+         }   
+             
+        
+        
+     }
+}  
+  @media(max-width:700px){
+  .subTituloPagina{
+    text-align: center;
+   }      
+ }
+ 
