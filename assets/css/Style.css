@@ -163,6 +163,53 @@ aside {
   text-align: center;
 }
 
+.navProductos ul {
+  list-style-type: none;
+  margin: 7px;
+  text-align: end;
+  font-size: x-large;
+}
+.navProductos ul li {
+  background-color: rgb(155, 89, 182);
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.navProductos ul li:hover ul {
+  display: block;
+  height: 200px;
+}
+.navProductos ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navProductos > ul > li > ul {
+  display: none;
+  list-style-type: none;
+  margin-left: 15px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+.navProductos > ul > li > ul li {
+  display: inline;
+}
+.navProductos > ul > li > ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(155, 89, 182);
+  display: block;
+  padding: 10px;
+}
+
+@media (max-width: 700px) {
+  .subTituloPagina {
+    text-align: center;
+  }
+}
 .btn_BS {
   background-color: rgb(253, 197, 206);
   color: rgb(214, 85, 128);
@@ -317,58 +364,6 @@ footer .tituloFormulario {
   }
 }
 /*productos*/
-.navProductos ul {
-  list-style-type: none;
-  margin: 7px;
-  text-align: end;
-  font-size: x-large;
-}
-
-.navProductos > ul > li {
-  background-color: rgb(155, 89, 182);
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
-.navProductos > ul > li > a {
-  color: white;
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.navProductos > ul > li:hover ul {
-  display: block;
-  height: 200px;
-}
-
-@media (max-width: 700px) {
-  .subTituloPagina {
-    text-align: center;
-  }
-}
-.navProductos > ul > li > ul {
-  display: none;
-  list-style-type: none;
-  margin-left: 15px;
-  position: absolute;
-  top: 40px;
-  left: 0;
-}
-
-.navProductos > ul > li > ul > li {
-  display: inline;
-}
-
-.navProductos > ul > li > ul > li > a {
-  text-decoration: none;
-  color: white;
-  background-color: rgb(155, 89, 182);
-  display: block;
-  padding: 10px;
-}
-
 /*productos*/
 /*Nosotros*/
 .parrafoNosotros {
