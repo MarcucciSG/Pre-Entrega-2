@@ -1,0 +1,26 @@
+.pagina{
+    overflow-x:hidden;    
+    background-color: rgb(253, 197, 206) ;
+    display: grid;
+    grid-template-columns:1fr 2fr 2fr 1fr;      
+    grid-template-areas:"header header header header"
+                        "nav   nav    nav    nav"
+                         "main   main   main   main"
+                        " footer footer footer footer";
+}
+header{
+    grid-area:header;
+    background-color: rgb(214, 85, 128);
+}
+nav{
+    grid-area:nav;
+}
+main{
+    grid-area:main;
+}
+aside{
+    grid-area: aside;
+    }
+.paginaConBS{
+    background-color: rgb(253, 197, 206) ;
+}

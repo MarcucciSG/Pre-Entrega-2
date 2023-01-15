@@ -1,0 +1,177 @@
+@import "reset";
+@import "pagina";
+@import"navbar";
+@import"header";
+@import"tituloySubtitulo";
+@import"tarjetaProductos";
+@import"btnBootstrap";
+@import"btnIndex";
+@import"footer";
+
+
+
+/*index*/
+
+
+.imagenSlider{
+    background-image: url(../img/slider.jpg);
+    width: 100%;
+    height: 400px;
+    background-size:contain;
+    
+    
+}
+
+   
+ 
+
+/*Contactos*/
+
+    
+           
+     /*empresas*/  
+  
+     @media (max-width:980px) {
+        .contenedorEmpresas{
+            display: flex;
+            flex-direction: column;
+                    }   
+    .imgEmpresas{
+        height: 300px;
+        margin:20px;        
+            }
+    .imgQuienesSomos{
+        height: 300px;
+        margin:20px;
+        margin-right: 10px;
+        width:90vw;
+    }    
+    
+   }
+   
+   .tituloVentas{
+    
+    text-decoration: underline;
+    text-align: center;
+    font-size: xx-large;
+    
+   }
+   .textQuienesSomos{
+    text-align: end;
+    margin: 10px;
+   }
+    .contenedorEmpresas{
+        display: flex;
+        flex-direction: wrap;
+     
+
+    }
+    .imgQuienesSomos{
+     height: 400px;
+    margin: 20px;
+    border-color: rgb(253, 197, 206);
+    border-radius: 15px;
+
+    }
+  .imgEmpresas{
+    height: 400px;
+    margin: 20px;
+    border-color: rgb(253, 197, 206);
+    border-radius: 15px;
+  
+
+     }
+     
+     .btnEmpresas{                               
+        margin: 5px;
+        margin: 20px;
+        padding: 10px;
+        width: 500px;        
+        border-radius: 10px;
+        background-color: rgb(155 89 182);
+        color: white;
+        font-size: large;
+        text-align: center;       
+
+     }
+     @media(max-width:560px){
+        .btnEmpresas{
+            width: 300px;
+        }
+     }
+     /*productos*/   
+     .navProductos ul {        
+        list-style-type: none;            
+        margin: 7px;               
+        text-align: end;
+        font-size: x-large;
+        
+             
+        
+        
+     }
+     .navProductos > ul > li{                     
+        background-color: rgb(155 89 182);
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        
+        
+        
+        
+        
+        
+
+     }
+     .navProductos > ul > li > a {
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        
+        
+        
+        
+     }
+     .navProductos > ul > li:hover ul{
+        display: block;    
+        height:200px    
+        
+     }
+     @media(max-width:700px){
+      .subTituloPagina{
+        text-align: center;
+       }      
+     }
+     .navProductos > ul > li > ul{
+        
+        display: none;
+        list-style-type: none;
+        margin-left: 15px;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        
+        
+        
+        
+     }
+     .navProductos > ul > li > ul > li{
+        display: inline;
+       
+        
+     }
+    
+     .navProductos > ul > li > ul > li > a{
+        text-decoration: none;
+        color: white;
+        background-color:  rgb(155 89 182);
+        display: block;
+        padding: 10px;
+             
+             }
+    /*productos*/ 
+    /*Nosotros*/
+.parrafoNosotros{
+    font-size: 25px;
+}

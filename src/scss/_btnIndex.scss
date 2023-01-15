@@ -1,0 +1,52 @@
+.botonesIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .btnIndex{
+        background-image: url(../img/btnCocina.jpg);
+        width: 450px;
+        height: 300px;        
+        background-size: contain;
+        border-color:rgb(155 89 182);
+        border-radius: 10px;
+    }
+    .btnIndex2{
+        background-image: url(../img/btnOrden.jpg);
+        width: 450px;
+        height: 300px;    
+        background-size: contain;
+        border-color:rgb(155 89 182);
+        border-radius: 10px;
+    }
+    .btnIndex3{
+        background-image: url(../img/btnUsoPersonal.jpg);
+        width: 450px;
+        height: 300px;    
+        background-size: contain;
+        border-color:rgb(155 89 182);
+        border-radius: 10px;
+    }
+    .tituloBtnIndex{
+        color: rgb(229, 151, 240);
+        font-size: xx-large;
+        }
+}
+@media(max-width:850px){
+    
+    .botonesIndex{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+        gap:15px;
+        
+        .tituloProductos{
+            text-align: center;
+        }
+    }
+
+}
+
+

@@ -1,419 +1,376 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-.pagina{
-    overflow-x:hidden;    
-    background-color: rgb(253, 197, 206) ;
-    display: grid;
-    grid-template-columns:1fr 2fr 2fr 1fr;      
-    grid-template-areas:"header header header header"
-                        "nav   nav    nav    nav"
-                         "main   main   main   main"
-                        " footer footer footer footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    grid-area:header;
-    background-color: rgb(214, 85, 128);
+.pagina {
+  overflow-x: hidden;
+  background-color: rgb(253, 197, 206);
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-areas: "header header header header" "nav   nav    nav    nav" "main   main   main   main" " footer footer footer footer";
 }
-nav{
-    grid-area:nav;
+
+header {
+  grid-area: header;
+  background-color: rgb(214, 85, 128);
 }
-main{
-    grid-area:main;
+
+nav {
+  grid-area: nav;
 }
-aside{
-    grid-area: aside;
-    }
-.paginaConBS{
-    background-color: rgb(253, 197, 206) ;
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.paginaConBS {
+  background-color: rgb(253, 197, 206);
+}
+
+.navegador .fa-bars {
+  display: none;
+  font-size: 30px;
+}
+.navegador ul {
+  list-style-type: none;
+  background-color: rgb(214, 85, 128);
+  border: solid;
+  border-color: rgb(150, 58, 89);
+  font-size: x-large;
+  text-align: center;
+}
+.navegador ul li {
+  display: inline-block;
+}
+.navegador ul a {
+  display: block;
+  color: rgb(253, 197, 206);
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 55px;
+  }
+  .navegador {
+    justify-content: space-between;
+  }
+  .navegador .fa-bars {
+    display: block;
+    color: rgb(253, 197, 206);
+    font-size: 30px;
+    padding: 20px;
+    margin-top: -70px;
+  }
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+  .navegador ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 300px;
+    left: -300px;
+    transition: 0.2s;
+  }
+  .navegador ul:hover {
+    left: 0;
+  }
+}
+.tiendaOnline {
+  color: rgb(253, 197, 206);
+  background-color: rgb(214, 85, 128);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.tiendaOnline #logo {
+  position: absolute;
+  width: 69px;
+  top: 10px;
+  right: 20px;
+}
+
+.tituloProductos {
+  font-size: x-large;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.subTituloPagina {
+  margin-left: 50px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  text-align: start;
+  font-size: xx-large;
+}
+
+@media (max-width: 1024px) {
+  .subTituloPagina {
+    text-align: center;
+  }
+}
+.divPadre {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.divPadre .tarjetaProducto {
+  margin: 20px;
+  width: 300px;
+  border: solid 2px;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: large;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.6509803922);
+}
+.divPadre .tarjetaProducto .tarjeta__imgproducto {
+  width: 100%;
+}
+.divPadre .tarjetaProducto .tarjeta__titulo {
+  margin: 5px;
+  text-align: center;
+}
+.divPadre .tarjetaProducto .tarjeta__btn {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 60px;
+  border: solid;
+  border-color: rgb(253, 197, 206);
+  color: rgb(255, 255, 255);
+  font-size: large;
+  background-color: rgb(155, 89, 182);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn_BS {
+  background-color: rgb(253, 197, 206);
+  color: rgb(214, 85, 128);
+}
+
+.botonesIndex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.botonesIndex .btnIndex {
+  background-image: url(../img/btnCocina.jpg);
+  width: 450px;
+  height: 300px;
+  background-size: contain;
+  border-color: rgb(155, 89, 182);
+  border-radius: 10px;
+}
+.botonesIndex .btnIndex2 {
+  background-image: url(../img/btnOrden.jpg);
+  width: 450px;
+  height: 300px;
+  background-size: contain;
+  border-color: rgb(155, 89, 182);
+  border-radius: 10px;
+}
+.botonesIndex .btnIndex3 {
+  background-image: url(../img/btnUsoPersonal.jpg);
+  width: 450px;
+  height: 300px;
+  background-size: contain;
+  border-color: rgb(155, 89, 182);
+  border-radius: 10px;
+}
+.botonesIndex .tituloBtnIndex {
+  color: rgb(229, 151, 240);
+  font-size: xx-large;
+}
+
+@media (max-width: 850px) {
+  .botonesIndex {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    gap: 15px;
+  }
+  .botonesIndex .tituloProductos {
+    text-align: center;
+  }
+}
+footer {
+  color: rgb(253, 197, 206);
+  background-color: rgb(214, 85, 128);
+  padding: 10px;
+  font-size: x-large;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  grid-area: footer;
+}
+footer .tituloFooter {
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+footer .footerMetodosDePago {
+  text-align: center;
+}
+footer .footerRedesSociales {
+  text-align: end;
+}
+footer .tituloFormulario {
+  text-align: center;
 }
 
 /*index*/
-
-.tiendaOnline{ 
-        color: rgb(253, 197, 206);
-        background-color: rgb(214, 85, 128);
-        padding: 10px; 
-        font-size: 30px;
-        text-align: center;       
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;                  
-        }
-    #logo{
-        position: absolute;
-        width: 69px;
-        top: 10px;
-        right: 20px;                
-    }
-.navegador > .fa-bars{
-    display: none;
-    font-size: 30px;
-    
-}
- @media(max-width:600px) {     
-    #logo{      
-        width: 55px;             
-    }
-    .navegador{
-        justify-content: space-between;        
-    }
-    .navegador > .fa-bars{       
-        display: block;
-        color:rgb(253, 197, 206) ;
-        font-size: 30px;
-        padding: 20px;       
-       margin-top: -70px;
-    }
-    .navegador > .fa-bars:hover + ul{
-        left: 0;
-
-    }
-    .navegador > ul:hover{
-        left:0
-    }
-    .navegador > ul{
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        justify-content: space-between;        
-        width: 250px;
-        height: 300px;  
-        left: -300px;   
-        transition: 0.2s; 
-       
-    } 
-
-
-    
-
- }
-.navegador > ul{
-    list-style-type: none;
-    background-color: rgb(214, 85, 128);
-    border: solid;
-    border-color:rgb(150, 58, 89);
-    font-size: x-large;
-    text-align: center;
-    
-    
-}
-.navegador ul li{
-    display: inline-block;
-}
-.navegador ul li a{
-    display: block;
-    color: rgb(253, 197, 206);
-    text-decoration: none;
-    padding: 10px;
-}
-.imagenSlider{
-    background-image: url(../img/slider.jpg);
-    width: 100%;
-    height: 400px;
-    background-size:contain;
-    
-    
-}
-.tituloProductos{
-    font-size: x-large;
-    margin: 10px;
-    margin-bottom: 20px;
-    padding: 5px;             
-}
-.divPadre{
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items:center;  
-    flex-wrap: wrap;
+.imagenSlider {
+  background-image: url(../img/slider.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: contain;
 }
 
-.tarjetaProducto{
-    margin:20px;     
-    width: 300px;
-    border: solid 2px;
-    border-radius: 8px;    
-    padding: 10px;
-    font-size: large;  
-    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-    box-shadow: 5px 5px 15px 5px #000000a6;
-    
-}
-.tarjeta__imgproducto{
-    width: 100%;
-
-}
-
-.tarjeta__titulo{
-    margin: 5px;
-    text-align: center;
-    }
-
-.tarjeta__btn{
-    display: block;   
-    width: 150px;
-    padding: 10px;
-    margin: 20px;
-    margin-left: 60px;
-    border: solid;    
-    border-color: rgb(253, 197, 206);
-    color: rgb(255, 255, 255);
-    font-size: large;
-    background-color: rgb(155 89 182);
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-}
-.botonesIndex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-@media(max-width:850px){
-    .tituloProductos{
-        text-align: center;
-    }
-    .botonesIndex{
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        padding: 5px;
-        gap:15px;
-    }
-
-}
-
-
-.btnIndex{
-    background-image: url(../img/btnCocina.jpg);
-    width: 450px;
-    height: 300px;        
-    background-size: contain;
-    border-color:rgb(155 89 182);
-    border-radius: 10px;
-}
-.btnIndex2{
-    background-image: url(../img/btnOrden.jpg);
-    width: 450px;
-    height: 300px;    
-    background-size: contain;
-    border-color:rgb(155 89 182);
-    border-radius: 10px;
-}
-.btnIndex3{
-    background-image: url(../img/btnUsoPersonal.jpg);
-    width: 450px;
-    height: 300px;    
-    background-size: contain;
-    border-color:rgb(155 89 182);
-    border-radius: 10px;
-}
-.tituloBtnIndex{
-    color: rgb(229, 151, 240);
-    font-size: xx-large;
-    }   
-    
-footer{
-        color:  rgb(253, 197, 206);        
-        background-color: rgb(214, 85, 128);
-        padding: 10px;          
-        font-size: x-large;  
-        display: flex;      
-        flex-wrap: wrap ;  
-        flex-direction: row;
-        align-items:flex-start;
-        justify-content:space-between; 
-        grid-area: footer;
-                
-                
-}
-.tituloFooter{
-margin-top: 0px;
-margin-right: 10px;
-margin-bottom: 10px;
-}
-.footerMetodosDePago{
-    text-align: center;  
-}
-
-.footerRedesSociales{
-    text-align: end;
-}
-.tituloFormulario{
- text-align: center;
-}
-.subTituloPagina{   
-     margin-left: 50px;
-     margin-bottom: 15px;
-    text-decoration: underline;
-    text-align: start;
-    font-size: xx-large;
-
-} 
 /*Contactos*/
-@media(max-width:1024px){    
-                    
-    .subTituloPagina{
-        text-align: center;
-    }
+/*empresas*/
+@media (max-width: 980px) {
+  .contenedorEmpresas {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgEmpresas {
+    height: 300px;
+    margin: 20px;
+  }
+  .imgQuienesSomos {
+    height: 300px;
+    margin: 20px;
+    margin-right: 10px;
+    width: 90vw;
+  }
 }
-    .btn_BS{
-    background-color:  rgb(253, 197, 206);        
-    color: rgb(214, 85, 128);
-      
-    }
-           
-     /*empresas*/  
-  
-     @media (max-width:980px) {
-        .contenedorEmpresas{
-            display: flex;
-            flex-direction: column;
-                    }   
-    .imgEmpresas{
-        height: 300px;
-        margin:20px;        
-            }
-    .imgQuienesSomos{
-        height: 300px;
-        margin:20px;
-        margin-right: 10px;
-        width:90vw;
-    }    
-    
-   }
-   
-   .tituloVentas{
-    
-    text-decoration: underline;
+.tituloVentas {
+  text-decoration: underline;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.textQuienesSomos {
+  text-align: end;
+  margin: 10px;
+}
+
+.contenedorEmpresas {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.imgQuienesSomos {
+  height: 400px;
+  margin: 20px;
+  border-color: rgb(253, 197, 206);
+  border-radius: 15px;
+}
+
+.imgEmpresas {
+  height: 400px;
+  margin: 20px;
+  border-color: rgb(253, 197, 206);
+  border-radius: 15px;
+}
+
+.btnEmpresas {
+  margin: 5px;
+  margin: 20px;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+  background-color: rgb(155, 89, 182);
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .btnEmpresas {
+    width: 300px;
+  }
+}
+/*productos*/
+.navProductos ul {
+  list-style-type: none;
+  margin: 7px;
+  text-align: end;
+  font-size: x-large;
+}
+
+.navProductos > ul > li {
+  background-color: rgb(155, 89, 182);
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.navProductos > ul > li > a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navProductos > ul > li:hover ul {
+  display: block;
+  height: 200px;
+}
+
+@media (max-width: 700px) {
+  .subTituloPagina {
     text-align: center;
-    font-size: xx-large;
-    
-   }
-   .textQuienesSomos{
-    text-align: end;
-    margin: 10px;
-   }
-    .contenedorEmpresas{
-        display: flex;
-        flex-direction: wrap;
-     
-
-    }
-    .imgQuienesSomos{
-     height: 400px;
-    margin: 20px;
-    border-color: rgb(253, 197, 206);
-    border-radius: 15px;
-
-    }
-  .imgEmpresas{
-    height: 400px;
-    margin: 20px;
-    border-color: rgb(253, 197, 206);
-    border-radius: 15px;
-  
-
-     }
-     
-     .btnEmpresas{                               
-        margin: 5px;
-        margin: 20px;
-        padding: 10px;
-        width: 500px;        
-        border-radius: 10px;
-        background-color: rgb(155 89 182);
-        color: white;
-        font-size: large;
-        text-align: center;       
-
-     }
-     @media(max-width:560px){
-        .btnEmpresas{
-            width: 300px;
-        }
-     }
-     /*productos*/   
-     .navProductos ul {        
-        list-style-type: none;            
-        margin: 7px;               
-        text-align: end;
-        font-size: x-large;
-        
-             
-        
-        
-     }
-     .navProductos > ul > li{                     
-        background-color: rgb(155 89 182);
-        display: inline-block;
-        position: relative;
-        text-align: center;
-        
-        
-        
-        
-        
-        
-
-     }
-     .navProductos > ul > li > a {
-        color: white;
-        display: block;
-        text-decoration: none;
-        padding: 10px;
-        
-        
-        
-        
-     }
-     .navProductos > ul > li:hover ul{
-        display: block;    
-        height:200px    
-        
-     }
-     @media(max-width:700px){
-      .subTituloPagina{
-        text-align: center;
-       }      
-     }
-     .navProductos > ul > li > ul{
-        
-        display: none;
-        list-style-type: none;
-        margin-left: 15px;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        
-        
-        
-        
-     }
-     .navProductos > ul > li > ul > li{
-        display: inline;
-       
-        
-     }
-    
-     .navProductos > ul > li > ul > li > a{
-        text-decoration: none;
-        color: white;
-        background-color:  rgb(155 89 182);
-        display: block;
-        padding: 10px;
-             
-             }
-    /*productos*/ 
-    /*Nosotros*/
-.parrafoNosotros{
-    font-size: 25px;
+  }
 }
+.navProductos > ul > li > ul {
+  display: none;
+  list-style-type: none;
+  margin-left: 15px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.navProductos > ul > li > ul > li {
+  display: inline;
+}
+
+.navProductos > ul > li > ul > li > a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(155, 89, 182);
+  display: block;
+  padding: 10px;
+}
+
+/*productos*/
+/*Nosotros*/
+.parrafoNosotros {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

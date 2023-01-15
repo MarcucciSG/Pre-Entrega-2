@@ -1,0 +1,30 @@
+   
+footer{
+    color:  rgb(253, 197, 206);        
+    background-color: rgb(214, 85, 128);
+    padding: 10px;          
+    font-size: x-large;  
+    display: flex;      
+    flex-wrap: wrap ;  
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-between; 
+    grid-area: footer;
+    .tituloFooter{
+        margin-top: 0px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        }       
+        .footerMetodosDePago{
+            text-align: center;  
+            }
+        .footerRedesSociales{
+            text-align: end;
+                }   
+        .tituloFormulario{
+             text-align: center;
+                    }               
+}
+
+
+

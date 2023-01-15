@@ -1,0 +1,61 @@
+ .navegador{
+        .fa-bars{
+            display: none;
+            font-size: 30px;
+            
+        }
+        ul{
+        list-style-type: none;
+        background-color: rgb(214, 85, 128);
+        border: solid;
+        border-color:rgb(150, 58, 89);
+        font-size: x-large;
+        text-align: center;
+
+        li{
+            display: inline-block;
+        }
+        
+        a{
+            display: block;
+            color: rgb(253, 197, 206);
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+}
+
+@media(max-width:600px) {     
+    #logo{      
+        width: 55px;             
+    }
+    .navegador{
+        justify-content: space-between;   
+        .fa-bars{       
+            display: block;
+            color:rgb(253, 197, 206) ;
+            font-size: 30px;
+            padding: 20px;       
+           margin-top: -70px;
+           &:hover + ul{
+            left: 0;
+    
+        }
+        }   
+        ul{
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;        
+            width: 250px;
+            height: 300px;  
+            left: -300px;   
+            transition: 0.2s; 
+            &:hover{
+                left:0
+            }
+           
+        }   
+    }        
+      
+ }
