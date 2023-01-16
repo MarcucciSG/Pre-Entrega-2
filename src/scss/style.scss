@@ -1,3 +1,4 @@
+@import"variables";
 @import "reset";
 @import "pagina";
 @import"navbar";
@@ -5,105 +6,14 @@
 @import"tituloySubtitulo";
 @import"tarjetaProductos";
 @import"navProductos";
+@import"empresas";
+@import"parrafoparaBS";
 @import"btnBootstrap";
 @import"btnIndex";
 @import"footer";
 
 
-
-/*index*/
-
-
-.imagenSlider{
-    background-image: url(../img/slider.jpg);
-    width: 100%;
-    height: 400px;
-    background-size:contain;
-    
-    
-}
-
    
  
 
-/*Contactos*/
 
-    
-           
-     /*empresas*/  
-  
-     @media (max-width:980px) {
-        .contenedorEmpresas{
-            display: flex;
-            flex-direction: column;
-                    }   
-    .imgEmpresas{
-        height: 300px;
-        margin:20px;        
-            }
-    .imgQuienesSomos{
-        height: 300px;
-        margin:20px;
-        margin-right: 10px;
-        width:90vw;
-    }    
-    
-   }
-   
-   .tituloVentas{
-    
-    text-decoration: underline;
-    text-align: center;
-    font-size: xx-large;
-    
-   }
-   .textQuienesSomos{
-    text-align: end;
-    margin: 10px;
-   }
-    .contenedorEmpresas{
-        display: flex;
-        flex-direction: wrap;
-     
-
-    }
-    .imgQuienesSomos{
-     height: 400px;
-    margin: 20px;
-    border-color: rgb(253, 197, 206);
-    border-radius: 15px;
-
-    }
-  .imgEmpresas{
-    height: 400px;
-    margin: 20px;
-    border-color: rgb(253, 197, 206);
-    border-radius: 15px;
-  
-
-     }
-     
-     .btnEmpresas{                               
-        margin: 5px;
-        margin: 20px;
-        padding: 10px;
-        width: 500px;        
-        border-radius: 10px;
-        background-color: rgb(155 89 182);
-        color: white;
-        font-size: large;
-        text-align: center;       
-
-     }
-     @media(max-width:560px){
-        .btnEmpresas{
-            width: 300px;
-        }
-     }
-     /*productos*/   
-     
-    /*productos*/ 
-    /*Nosotros*/
-.parrafoNosotros{
-    font-size: 25px;
-}

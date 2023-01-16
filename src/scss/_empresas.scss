@@ -1,0 +1,50 @@
+  
+
+   
+    .contenedorEmpresas{
+        display: flex;
+        flex-direction: wrap;
+     
+        .textQuienesSomos{
+            text-align: end;
+            margin: 10px;
+           }
+           .imgQuienesSomos{
+            height: 400px;
+           margin: 20px;
+           border-color: rgb(253, 197, 206);
+           border-radius: 15px;
+       
+           }
+         .imgEmpresas{
+           height: 400px;
+           margin: 20px;
+           border-color: rgb(253, 197, 206);
+           border-radius: 15px;
+         
+       
+            }
+
+    }
+         @media (max-width:980px) {
+        .contenedorEmpresas{
+            display: flex;
+            flex-direction: column;
+                    }   
+    .imgEmpresas{
+        height: 300px;
+        margin:20px;        
+            }
+    .imgQuienesSomos{
+        height: 300px;
+        margin:20px;
+        margin-right: 10px;
+        width:90vw;
+    }    
+    
+   }
+   
+    
+     
+     
+   

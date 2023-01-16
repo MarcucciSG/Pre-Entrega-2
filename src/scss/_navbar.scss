@@ -6,7 +6,7 @@
         }
         ul{
         list-style-type: none;
-        background-color: rgb(214, 85, 128);
+        background-color:$colorSecundario;
         border: solid;
         border-color:rgb(150, 58, 89);
         font-size: x-large;
@@ -18,7 +18,7 @@
         
         a{
             display: block;
-            color: rgb(253, 197, 206);
+            color: $colorLetras;
             text-decoration: none;
             padding: 10px;
         }
@@ -33,7 +33,7 @@
         justify-content: space-between;   
         .fa-bars{       
             display: block;
-            color:rgb(253, 197, 206) ;
+            color:$colorLetras ;
             font-size: 30px;
             padding: 20px;       
            margin-top: -70px;
