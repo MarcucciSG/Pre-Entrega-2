@@ -273,7 +273,7 @@ aside {
   gap: 15px;
 }
 .botonesIndex .btnIndex {
-  background-image: url(../img/btnCocina.jpg);
+  background-image: url(../img/btnCocina-min.jpg);
   width: 450px;
   height: 300px;
   background-size: contain;
@@ -281,7 +281,7 @@ aside {
   border-radius: 10px;
 }
 .botonesIndex .btnIndex2 {
-  background-image: url(../img/btnOrden.jpg);
+  background-image: url(../img/btnOrden-min.jpg);
   width: 450px;
   height: 300px;
   background-size: contain;
@@ -289,7 +289,7 @@ aside {
   border-radius: 10px;
 }
 .botonesIndex .btnIndex3 {
-  background-image: url(../img/btnUsoPersonal.jpg);
+  background-image: url(../img/btnUsoPersonal-min.jpg);
   width: 450px;
   height: 300px;
   background-size: contain;
