@@ -10,18 +10,11 @@
             margin: 10px;
            }
            .imgQuienesSomos{
-            height: 400px;
-           margin: 20px;
-           border-color: rgb(253, 197, 206);
-           border-radius: 15px;
+            @extend %imgMedium;
        
            }
          .imgEmpresas{
-           height: 400px;
-           margin: 20px;
-           border-color: rgb(253, 197, 206);
-           border-radius: 15px;
-         
+           @extend %imgMedium;
        
             }
 
