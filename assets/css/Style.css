@@ -142,7 +142,7 @@ aside {
 .textQuienesSomos {
   text-align: end;
   margin: 10px;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 @media (max-width: 1024px) {
