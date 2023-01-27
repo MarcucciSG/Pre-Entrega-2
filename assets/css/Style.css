@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .divPadre .tarjetaProducto {
   margin: 20px;
   width: 300px;
@@ -13,14 +19,7 @@
   border-radius: 15px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .pagina {
-  overflow-x: hidden;
   background-color: rgb(253, 197, 206);
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
@@ -273,7 +272,7 @@ aside {
   gap: 15px;
 }
 .botonesIndex .btnIndex {
-  background-image: url(../img/btnCocina-min.jpg);
+  background-image: url(../../assets/img/btnCocina-min.jpg);
   width: 450px;
   height: 300px;
   background-size: contain;
@@ -281,7 +280,7 @@ aside {
   border-radius: 10px;
 }
 .botonesIndex .btnIndex2 {
-  background-image: url(../img/btnOrden-min.jpg);
+  background-image: url(../../assets/img/btnOrden-min.jpg);
   width: 450px;
   height: 300px;
   background-size: contain;
@@ -289,7 +288,7 @@ aside {
   border-radius: 10px;
 }
 .botonesIndex .btnIndex3 {
-  background-image: url(../img/btnUsoPersonal-min.jpg);
+  background-image: url(../../assets/img/btnUsoPersonal-min.jpg);
   width: 450px;
   height: 300px;
   background-size: contain;
