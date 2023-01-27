@@ -374,9 +374,19 @@ aside {
   text-align: center;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 540px) {
   .btnEmpresas {
-    width: 300px;
+    width: 400px;
+  }
+}
+@media (max-width: 440px) {
+  .btnEmpresas {
+    width: 350px;
+  }
+}
+@media (max-width: 390px) {
+  .btnEmpresas {
+    width: 250px;
   }
 }
 footer {
