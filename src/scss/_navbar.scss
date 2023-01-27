@@ -25,10 +25,8 @@
     }
 }
 
-@media(max-width:600px) {     
-    #logo{      
-        width: 55px;             
-    }
+@media(max-width:600px) {    
+    
     .navegador{
         justify-content: space-between;   
         .fa-bars{       
@@ -59,3 +57,23 @@
     }        
       
  }
+
+ @media(max-width:370px){
+    .navegador{
+        justify-content: space-between;   
+        .fa-bars{       
+            display: block;
+            color:$colorLetras ;
+            font-size: 30px;
+            padding: 20px;       
+           margin-top: -60px;
+           &:hover + ul{
+            left: 0;
+    
+        }
+        }   
+          
+    }        
+      
+ }
+ 

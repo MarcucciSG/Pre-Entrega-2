@@ -48,6 +48,23 @@
     }
 
 }
+@media(max-width:500px){
+    .botonesIndex{
+        .btnIndex{
+            width: 300px;
+            height: 250px;  
+        }
+        .btnIndex2{
+            width: 300px;
+            height: 250px;
+        }
+        .btnIndex3{
+            width: 300px;
+            height: 250px;
+        }
+    }
+   
+}
 .btnEmpresas{                               
     margin: 5px;
     margin: 20px;
