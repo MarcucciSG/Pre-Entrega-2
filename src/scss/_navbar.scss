@@ -71,7 +71,22 @@
             left: 0;
     
         }
-        }   
+        }
+        ul{
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-between;   
+            margin-top: -10px;     
+            width: 250px;
+            height: 300px;  
+            left: -300px;   
+            transition: 0.2s; 
+            &:hover{
+                left:0
+            }
+           
+        }      
           
     }        
       

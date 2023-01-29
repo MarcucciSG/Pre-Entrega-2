@@ -111,6 +111,20 @@ aside {
   .navegador .fa-bars:hover + ul {
     left: 0;
   }
+  .navegador ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -10px;
+    width: 250px;
+    height: 300px;
+    left: -300px;
+    transition: 0.2s;
+  }
+  .navegador ul:hover {
+    left: 0;
+  }
 }
 .tiendaOnline {
   color: rgb(253, 197, 206);
